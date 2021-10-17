@@ -6,8 +6,29 @@
     font-size: 62.5%;
 }
 
+:root {
+    --xl: 2.4rem;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+
+
+    /* White theme */
+    /* --primary-color : white;
+    --secondary-color: #424949;
+    --font-color: #494949; */
+
+
+    /* Black theme */
+    --primary-color : #121212;
+    --secondary-color: #1f1f1f;
+    --font-color: #f1f1f1;
+   
+}
+
 body {
-    color: #000001;
+    color: var(--font-color);
+    background-color: var(--primary-color);
 }
 header {
     display: flex;
@@ -16,66 +37,62 @@ header {
 
 li , a {
     text-decoration: none;
-    color: #000001;
+    color: var(--font-color);
 }
 
-header .main-pfp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-title a {
+    display:flex;
     width: 100%;
-    height: 12rem;
-    
+    font-size: var(--xl);
+    font-weight: 300;
+    justify-content: center;
+    margin: 10% auto 3rem auto;
 }
 
-
-header .main-pfp img{
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-}
 
 header .main-navbar ul{
     display: flex;
     justify-content: center;
     list-style: none;
-    border-bottom: 1px solid #000001;
-    width: 50%;
+    border-bottom: 1px solid var(--font-color);
+    width: 36%;
     margin: 0 auto;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.8rem;
 }
 
 header .main-navbar ul a {
     margin: 0 2rem;
-    font-size: 1.6rem;
+    font-size: var(--lg);
+    font-weight: 300;
 }
 
 main {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     
 }
 
-main .main-webdev , .main-blockchain {
+main .main-webdev {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1.5rem;
-
-
-
 }
 
-main .main-webdev h1, .main-blockchain h1{
-    font-size: 1.5rem;
+main .main-webdev h1{
+    font-size: var(--md);
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+main .main-webdev a{
+    font-size: var(--sm);
+}
+
+main .main-webdev div{
     margin-bottom: 5rem;
-}
-
-main .main-webdev a, .main-blockchain a{
-    font-size: 1rem;
-}
-
-main .main-webdev div, .main-blockchain div{
-    margin-bottom: 5rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--secondary-color);
 }
