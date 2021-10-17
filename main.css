@@ -30,15 +30,15 @@ body {
     color: var(--font-color);
     background-color: var(--primary-color);
 }
+li , a {
+    text-decoration: none;
+    color: var(--font-color);
+}
 header {
     display: flex;
     flex-direction: column;
 }
 
-li , a {
-    text-decoration: none;
-    color: var(--font-color);
-}
 
 .main-title a {
     display:flex;
@@ -46,7 +46,7 @@ li , a {
     font-size: var(--xl);
     font-weight: 300;
     justify-content: center;
-    margin: 10% auto 3rem auto;
+    margin: 8% auto 3rem auto;
 }
 
 
@@ -54,14 +54,18 @@ header .main-navbar ul{
     display: flex;
     justify-content: center;
     list-style: none;
-    border-bottom: 1px solid var(--font-color);
-    width: 36%;
+    width: 22rem;
     margin: 0 auto;
     padding-bottom: 0.8rem;
+    border-bottom: 0.1rem solid var(--font-color);
 }
 
 header .main-navbar ul a {
-    margin: 0 2rem;
+    /* width: 36%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1rem;
     font-size: var(--lg);
     font-weight: 300;
 }
