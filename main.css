@@ -94,20 +94,21 @@ main .main-webdev a{
     font-size: var(--md);
     font-weight: 300;
 }
+
 .projects-list li{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     width: 22rem;
     height: 4rem;
-    border:1px solid #333;
+    border: 1px solid #333;
     margin-bottom: 2rem;
     list-style: none;
     padding: 0.4rem;
     border-radius: 2rem;
-    justify-content: center;
-    align-items: center;
-    /* box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03); */
-    cursor: pointer;
 }
+
 .projects-list li:hover {
     background-color: #1f1f1f;
 }
