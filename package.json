@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CryptoArdy/webtests.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Ardy <cryptoardy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CryptoArdy/webtests/issues"
+  },
+  "homepage": "https://github.com/CryptoArdy/webtests#readme"
+}
